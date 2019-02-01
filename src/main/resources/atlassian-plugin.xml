@@ -8,17 +8,30 @@
     </plugin-info>
 
     <!-- add our i18n resource -->
-    <resource type="i18n" name="i18n" location="JIRA_Gadgets"/>
+    <resource type="i18n" name="i18n" location="gadgets"/>
     
     <!-- add our web resources -->
-    <web-resource key="JIRA_Gadgets-resources" name="JIRA_Gadgets Web Resources">
+    <web-resource key="gadgets-resources" name="gadgets Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
         
-        <resource type="download" name="JIRA_Gadgets.css" location="/css/JIRA_Gadgets.css"/>
-        <resource type="download" name="JIRA_Gadgets.js" location="/js/JIRA_Gadgets.js"/>
+        <resource type="download" name="gadgets.css" location="/css/gadgets.css"/>
+        <resource type="download" name="gadgets.js" location="/js/gadgets.js"/>
         <resource type="download" name="images/" location="/images"/>
 
-        <context>JIRA_Gadgets</context>
+        <context>gadgets</context>
     </web-resource>
-    
+
+    <!-- add worklog report gadget -->
+    <gadget key="worklog-gadget" name="JIRA Worklog Gadget" location="gadget.xml"/>
+
+    <resource type="download" name="i18n/ALL_ALL.xml" location="i18n/ALL_ALL.xml">
+        <param name="content-type" value="text/xml; charset=UTF-8"/>
+    </resource>
+
+    <!-- Automatically finds all JAX-RS resource classes in the plugin and
+        publishes them. -->
+    <rest key="worklog-gadget-rest-resources" path="/worklog-gadget" version="1.0">
+        <description>Provides the REST resource for the worklog.</description>
+    </rest>
+
 </atlassian-plugin>

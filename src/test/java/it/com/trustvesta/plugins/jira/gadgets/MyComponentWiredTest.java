@@ -1,9 +1,9 @@
-package it.com.trustvesta.JIRA_Gadgets;
+package it.com.trustvesta.plugins.jira.gadgets;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.atlassian.plugins.osgi.test.AtlassianPluginsTestRunner;
-import com.trustvesta.JIRA_Gadgets.api.MyPluginComponent;
+import com.trustvesta.plugins.jira.gadgets.api.MyPluginComponent;
 import com.atlassian.sal.api.ApplicationProperties;
 
 import static org.junit.Assert.assertEquals;

@@ -1,9 +1,9 @@
-package com.trustvesta.JIRA_Gadgets.impl;
+package com.trustvesta.plugins.jira.gadgets.impl;
 
 import com.atlassian.plugin.spring.scanner.annotation.export.ExportAsService;
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.sal.api.ApplicationProperties;
-import com.trustvesta.JIRA_Gadgets.api.MyPluginComponent;
+import com.trustvesta.plugins.jira.gadgets.api.MyPluginComponent;
 
 import javax.inject.Inject;
 import javax.inject.Named;
