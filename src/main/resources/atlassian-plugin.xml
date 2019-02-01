@@ -7,10 +7,13 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
-    <!-- add our i18n resource -->
-    <resource type="i18n" name="i18n" location="gadgets"/>
     
+    <!-- add our i18n resource -->
+    <!--
+    <resource type="i18n" name="i18n" location="gadgets"/>
+    -->
     <!-- add our web resources -->
+    <!--
     <web-resource key="gadgets-resources" name="gadgets Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
         
@@ -20,7 +23,8 @@
 
         <context>gadgets</context>
     </web-resource>
-
+    -->
+    
     <!-- add worklog report gadget -->
     <gadget key="worklog-gadget" name="JIRA Worklog Gadget" location="gadget.xml"/>
 
