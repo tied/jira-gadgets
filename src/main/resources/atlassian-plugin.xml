@@ -34,7 +34,7 @@
 
     <!-- Automatically finds all JAX-RS resource classes in the plugin and
         publishes them. -->
-    <rest key="worklog-gadget-rest-resources" path="/worklog-gadget" version="1.0">
+    <rest key="worklog-gadget-rest-resources" name="Worklog Gadget REST Resource" path="/worklog-gadget" version="1.0">
         <description>Provides the REST resource for the worklog.</description>
     </rest>
 
