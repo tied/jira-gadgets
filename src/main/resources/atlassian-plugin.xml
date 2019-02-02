@@ -28,7 +28,8 @@
     </web-resource>
     
     <dashboard-item key="worklog-dashboard-item"
-            i18n-name-key="com.trustvesta.plugins.jira.dashboard.item.title">
+            i18n-name-key="com.trustvesta.plugins.jira.dashboard.item.title"
+            configurable="true">
         <definition>
             <title key="com.trustvesta.plugins.jira.dashboard.item.title"/>
             <categories>
