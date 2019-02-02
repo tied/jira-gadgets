@@ -41,7 +41,7 @@
         </definition>
         <description key="com.trustvesta.plugins.jira.dashboard.item.description"/>
         <resource name="view" type="soy" location=":worklog-dashboard-item-resources/Dashboard.Item.Templates.Static"/>
-        <context-provider class="ccom.trustvesta.plugins.jira.dashboard.DashboardItemContextProvider"/>
+        <context-provider class="com.trustvesta.plugins.jira.dashboard.DashboardItemContextProvider"/>
     </dashboard-item>
 
 
