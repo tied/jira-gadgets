@@ -1,8 +1,8 @@
-package ut.com.trustvesta.plugins.jira.gadgets;
+package ut.com.trustvesta.plugins.jira.dashboard;
 
 import org.junit.Test;
-import com.trustvesta.plugins.jira.gadgets.api.MyPluginComponent;
-import com.trustvesta.plugins.jira.gadgets.impl.MyPluginComponentImpl;
+import com.trustvesta.plugins.jira.dashboard.api.MyPluginComponent;
+import com.trustvesta.plugins.jira.dashboard.impl.MyPluginComponentImpl;
 
 import static org.junit.Assert.assertEquals;
 

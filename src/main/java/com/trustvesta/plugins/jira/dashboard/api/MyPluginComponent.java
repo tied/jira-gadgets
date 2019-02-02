@@ -1,4 +1,4 @@
-package com.trustvesta.plugins.jira.gadgets.api;
+package com.trustvesta.plugins.jira.dashboard.api;
 
 public interface MyPluginComponent
 {

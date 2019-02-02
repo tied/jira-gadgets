@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.trustvesta.plugins.jira</groupId>
-    <artifactId>gadgets</artifactId>
+    <artifactId>dashboard</artifactId>
     <version>0.1.0</version>
 
     <organization>
@@ -14,8 +14,8 @@
         <url>http://www.trustvesta.com/</url>
     </organization>
 
-    <name>gadgets</name>
-    <description>This is the com.trustvesta.plugins.jira.gadgets plugin for JIRA.</description>
+    <name>dashboard</name>
+    <description>This is the com.trustvesta.plugins.jira.dashboard plugin for JIRA.</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>
@@ -138,7 +138,7 @@
 
                         <!-- Add package to export here -->
                         <Export-Package>
-                            com.trustvesta.plugins.jira.gadgets.api,
+                            com.trustvesta.plugins.jira.dashboard.api,
                         </Export-Package>
 
                         <!-- Add package import here -->

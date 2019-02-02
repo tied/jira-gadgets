@@ -9,33 +9,40 @@
 
     
     <!-- add our i18n resource -->
-    <!--
-    <resource type="i18n" name="i18n" location="gadgets"/>
-    -->
+    <resource type="i18n" name="i18n" location="worklog-dashboard-item"/>
+
     <!-- add our web resources -->
-    <!--
-    <web-resource key="gadgets-resources" name="gadgets Web Resources">
+    <web-resource key="worklog-dashboard-item-resources" name="worklog-dashboard-item Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <transformation extension="soy">
+            <transformer key="soyTransformer"/>
+        </transformation>
         
-        <resource type="download" name="gadgets.css" location="/css/gadgets.css"/>
-        <resource type="download" name="gadgets.js" location="/js/gadgets.js"/>
+        <resource type="download" name="worklog-dashboard-item.css" location="/css/worklog-dashboard-item.css"/>
+        <resource type="download" name="worklog-dashboard-item.js" location="/js/worklog-dashboard-item.js"/>
         <resource type="download" name="images/" location="/images"/>
-
-        <context>gadgets</context>
+        <resource type="download" location="soy/dashboard-item.soy" name="soy/dashboard-item.soy.js"/>
+        <resource type="soy" location="/soy/dashboard-item.soy" name="Dashboard.Item.Templates.Static"/>
+        <context>atl.dashboard</context>
+        <context>worklog-dashboard-item</context>
     </web-resource>
-    -->
     
-    <!-- add worklog report gadget -->
-    <gadget key="worklog-gadget" name="JIRA Worklog Gadget" location="gadget.xml"/>
+    <dashboard-item key="worklog-dashboard-item"
+            i18n-name-key="com.trustvesta.plugins.jira.dashboard.item.title">
+        <definition>
+            <title key="com.trustvesta.plugins.jira.dashboard.item.title"/>
+            <categories>
+                <category>Jira</category>
+            </categories>
+            <author>
+                <name>Vesta</name>
+            </author>
+            <thumbnail location="/download/resources/${atlassian.plugin.key}:worklog-dashboard-item-resources/images/pluginLogo.png"/>
+        </definition>
+        <description key="com.trustvesta.plugins.jira.dashboard.item.description"/>
+        <resource name="view" type="soy" location=":worklog-dashboard-item-resources/Dashboard.Item.Templates.Static"/>
+        <context-provider class="ccom.trustvesta.plugins.jira.dashboard.DashboardItemContextProvider"/>
+    </dashboard-item>
 
-    <resource type="download" name="i18n/ALL_ALL.xml" location="i18n/ALL_ALL.xml">
-        <param name="content-type" value="text/xml; charset=UTF-8"/>
-    </resource>
-
-    <!-- Automatically finds all JAX-RS resource classes in the plugin and
-        publishes them. -->
-    <rest key="worklog-gadget-rest-resources" name="Worklog Gadget REST Resource" path="/worklog-gadget" version="1.0">
-        <description>Provides the REST resource for the worklog.</description>
-    </rest>
 
 </atlassian-plugin>

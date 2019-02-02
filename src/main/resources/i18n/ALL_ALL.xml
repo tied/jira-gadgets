@@ -1,4 +1,0 @@
-<messagebundle>
-    <msg name="gadget.title">JIRA Worklog Report Gadget</msg>
-    <msg name="gadget.description">A gadget to display worklog hours for the current sprint.</msg>
-</messagebundle>
